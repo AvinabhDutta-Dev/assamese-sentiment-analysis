@@ -1,0 +1,8 @@
+﻿Text,Base Prediction,Final Prediction,Confidence,Negation Detected,Contrast Detected,Sarcasm Risk,Rule Override Applied
+এইখন বৰ ভাল নাটক,positive,positive,0.9948,False,False,True,False
+ভাল আছিল কিন্তু শেষটো একেবাৰে বেয়া,positive,negative,0.7685,True,True,True,True
+মই এই ছবিখন ভাল পাইছিলো কাৰণ মই দুঘণ্টা ভালদৰে শুইছিলোঁ।,positive,negative,0.9947,True,True,True,True
+এইটো মই কেতিয়াও নেদেখিম,negative,negative,0.9461,False,False,False,False
+"ঐ, কালি গুৱাহাটীৰ সেই নতুন কেফেখনলৈ গৈছিলোঁ। সঁচা ক’বলৈ গ’লে, Vibeটো একদম Next Level আছিল, কিন্তু পইচাটো মৰা। এটা কফিৰ দামত ঘৰত এসপ্তাহৰ চেনি-চাহপাত আহি যাব। ফ’টো উঠিবলৈ ভাল, কিন্তু পকেটৰ বাবে Not Recommended ভাই!",positive,positive,0.6268,False,True,True,False
+আজিকালিৰ অসমীয়া মুভিবোৰত মিছাতে ইমান Melodrama কিয় দিয়ে বুজি নাপাওঁ। অলপ Practical হ’ব নোৱাৰে নেকি? ব্ৰেকআপ হ’লেই বৰষুণত তিতি কান্দিবই লাগিব নেকি? Cringe লাগি যায় কেতিয়াবা!,negative,negative,0.9834,False,False,True,False
+"যিহে জাম দিছে নহয়, ৰাস্তাতে বুঢ়া হৈ যাম যেন লাগিছে। অফিচ গৈ পোৱাৰ আগতে মোৰ Energy শেষ। চৰকাৰে ফ্লাইঅ’ভাৰ বনাইছে ঠিকেই, কিন্তু মানুহৰ ট্ৰেফিক চেন্সটো কতিয়া আহিব?",negative,negative,0.9806,False,True,False,False

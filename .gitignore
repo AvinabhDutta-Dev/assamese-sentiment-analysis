@@ -1,0 +1,23 @@
+# Model weights (hosted on Hugging Face Hub instead — see README)
+Models/CNN_BiLSTM/*.h5
+Models/CNN_BiLSTM/*.keras
+Models/indicBERT/
+Models/xlmr/
+Models/Best_Model/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
