@@ -130,7 +130,15 @@ tokenizer = AutoTokenizer.from_pretrained("AvinabhDutta-Dev/assamese-sentiment-m
 - Dataset is dual-annotated for quality assurance; raw, shuffled, and cleaned versions are all included for transparency.
 - Full write-up and methodology are available in the linked preprint.
 
-## Citation
+## Licensing & Citation
+
+### Code License
+The source code in this repository is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### Dataset, Models & Preprint License
+The dataset scripts, fine-tuned model weights, and the preprint text are licensed under a [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org). 
+
+This means you are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit by citing our preprint:
 
 ```bibtex
 @article{dev2026assamese,
