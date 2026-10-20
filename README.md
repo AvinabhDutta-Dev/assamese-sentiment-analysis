@@ -30,12 +30,12 @@ A comparative study benchmarking five machine learning and deep learning archite
 
 | Layer | Technology |
 |---|---|
-| Traditional ML | Scikit-learn (SVM), TF-IDF |
-| Deep Learning | TensorFlow/Keras (CNN-BiLSTM) |
-| Transformers | Hugging Face `transformers` (MuRIL, IndicBERT, XLM-RoBERTa) |
-| Data Processing | Pandas, NumPy |
-| Evaluation | Scikit-learn metrics, Matplotlib/Seaborn |
-| Model Hosting | Hugging Face Hub |
+| Traditional ML | <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn" width="20" height="20" /> Scikit-learn (SVM), TF-IDF |
+| Deep Learning | <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="20" height="20" /> TensorFlow / Keras (CNN-BiLSTM) |
+| Transformers | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" width="20" height="20" /> Hugging Face `transformers` (MuRIL, IndicBERT, XLM-RoBERTa) |
+| Data Processing | <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas" width="20" height="20" /> Pandas, <img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" width="20" height="20" /> NumPy |
+| Evaluation & Visualization | Scikit-learn metrics, <img src="https://cdn.simpleicons.org/matplotlib/11557C" alt="Matplotlib" width="20" height="20" /> Matplotlib, <img src="https://cdn.simpleicons.org/seaborn/4C72B0" alt="Seaborn" width="20" height="20" /> Seaborn |
+| Model Hosting | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face Hub" width="20" height="20" /> Hugging Face Hub |
 
 ---
 
@@ -109,6 +109,37 @@ Assamese_Sentiment_Analysis/
 MuRIL's result was further validated for robustness across 5 random seeds (σ < 0.4%).
 
 See `Results/Comparisons/` for full bar chart, radar chart, and per-model confusion matrices.
+
+---
+
+---
+
+## Results Visualizations
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Model comparison</strong><br />
+      <img src="Results/Comparisons/Grouped_Bar_Comparison.svg" alt="Grouped comparison of evaluation metrics across the five sentiment models" width="100%" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Accuracy vs. ROC-AUC</strong><br />
+      <img src="Results/Comparisons/Accuracy_vs_ROCAUC_Scatter.svg" alt="Scatter plot comparing model accuracy and ROC-AUC" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>MuRIL confusion matrix</strong><br />
+      <img src="Results/Confusion%20Matrix/muril_confusion_matrix.svg" alt="Confusion matrix for the MuRIL sentiment classifier" width="100%" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Dataset distribution</strong><br />
+      <img src="Results/Dataset%20Visualizations/distribution_plot.svg" alt="Distribution of the dataset used for Assamese sentiment classification" width="100%" />
+    </td>
+  </tr>
+</table>
+
+For the complete set of comparison charts, confusion matrices, ROC curves, and training plots, see the `Results/` directory.
 
 ---
 
