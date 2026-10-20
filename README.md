@@ -1,4 +1,24 @@
+<p align="center">
+  <img
+    src="docs/images/assamese-sentiment-analysis-hero.png"
+    alt="Assamese sentiment analysis benchmark comparing SVM, CNN-BiLSTM, IndicBERT, XLM-RoBERTa, and MuRIL on an 8,987-review dataset"
+    width="100%"
+  />
+</p>
+
 # Assamese Sentiment Analysis — Transfer Learning Models 🇮🇳
+
+<p align="center">
+  <a href="https://huggingface.co/collections/AvinabhDutta-Dev/assamese-sentiment-analysis-models-and-dataset">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Dataset-yellow?style=for-the-badge&logo=huggingface" alt="Assamese sentiment models and dataset on Hugging Face" />
+  </a>
+  <a href="https://huggingface.co/datasets/AvinabhDutta-Dev/assamese-movie-reviews-sentiment">
+    <img src="https://img.shields.io/badge/Explore-Dataset-2E8B57?style=for-the-badge&logo=huggingface&logoColor=white" alt="Explore the Assamese movie reviews sentiment dataset" />
+  </a>
+  <a href="https://doi.org/10.2139/ssrn.6357982">
+    <img src="https://img.shields.io/badge/Read-Preprint-386cb0?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Read the project preprint" />
+  </a>
+</p>
 
 A comparative study benchmarking five machine learning and deep learning architectures for binary sentiment classification on Assamese-language movie reviews — built to address the near-total absence of sentiment analysis resources for Assamese, a low-resource Indic language.
 
@@ -24,6 +44,8 @@ A comparative study benchmarking five machine learning and deep learning archite
 - **8,987 Assamese movie reviews**, dual-annotated by 2 native-speaker annotators.
 - **Inter-annotator agreement:** 97.33% (Cohen's Kappa = 0.942).
 - Labels: binary sentiment (**Positive** / **Negative**).
+
+> **NOTE:** 8,987 raw records; 8,986 validated reviews
 
 ---
 
