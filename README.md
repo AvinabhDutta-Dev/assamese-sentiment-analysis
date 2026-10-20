@@ -34,7 +34,7 @@ A comparative study benchmarking five machine learning and deep learning archite
 | Deep Learning | <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="20" height="20" /> TensorFlow / Keras (CNN-BiLSTM) |
 | Transformers | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" width="20" height="20" /> Hugging Face `transformers` (MuRIL, IndicBERT, XLM-RoBERTa) |
 | Data Processing | <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas" width="20" height="20" /> Pandas, <img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" width="20" height="20" /> NumPy |
-| Evaluation & Visualization | Scikit-learn metrics, <img src="https://cdn.simpleicons.org/matplotlib/11557C" alt="Matplotlib" width="20" height="20" /> Matplotlib, <img src="https://cdn.simpleicons.org/seaborn/4C72B0" alt="Seaborn" width="20" height="20" /> Seaborn |
+| Evaluation & Visualization | Scikit-learn metrics, <img src="https://jsdelivr.net" alt="Matplotlib" width="20" height="20" /> Matplotlib, <img src="https://jsdelivr.net" alt="Seaborn" width="20" height="20" /> Seaborn |
 | Model Hosting | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face Hub" width="20" height="20" /> Hugging Face Hub |
 
 ---
