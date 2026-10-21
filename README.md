@@ -9,6 +9,21 @@
 # Assamese Sentiment Analysis — Transfer Learning Models 🇮🇳
 
 <p align="center">
+  <a href="https://github.com/AvinabhDutta-Dev/assamese-sentiment-analysis">
+    <img src="https://img.shields.io/github/license/AvinabhDutta-Dev/assamese-sentiment-analysis?style=flat-square&label=License" alt="Code license" />
+  </a>
+  <a href="https://github.com/AvinabhDutta-Dev/assamese-sentiment-analysis/commits/main">
+    <img src="https://img.shields.io/github/last-commit/AvinabhDutta-Dev/assamese-sentiment-analysis?style=flat-square&label=Last%20commit" alt="Last commit" />
+  </a>
+  <a href="https://github.com/AvinabhDutta-Dev/assamese-sentiment-analysis">
+    <img src="https://img.shields.io/github/languages/top/AvinabhDutta-Dev/assamese-sentiment-analysis?style=flat-square" alt="Top programming language" />
+  </a>
+  <a href="https://github.com/AvinabhDutta-Dev/assamese-sentiment-analysis">
+    <img src="https://img.shields.io/github/repo-size/AvinabhDutta-Dev/assamese-sentiment-analysis?style=flat-square&label=Repo%20size" alt="Repository size" />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://huggingface.co/collections/AvinabhDutta-Dev/assamese-sentiment-analysis-models-and-dataset">
     <img src="https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Dataset-yellow?style=for-the-badge&logo=huggingface" alt="Assamese sentiment models and dataset on Hugging Face" />
   </a>
@@ -34,18 +49,17 @@ A comparative study benchmarking five machine learning and deep learning archite
 | Deep Learning | <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="20" height="20" /> TensorFlow / Keras (CNN-BiLSTM) |
 | Transformers | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" width="20" height="20" /> Hugging Face `transformers` (MuRIL, IndicBERT, XLM-RoBERTa) |
 | Data Processing | <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas" width="20" height="20" /> Pandas, <img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" width="20" height="20" /> NumPy |
-| Evaluation & Visualization | Scikit-learn metrics, <img src="https://jsdelivr.net" alt="Matplotlib" width="20" height="20" /> Matplotlib, <img src="https://jsdelivr.net" alt="Seaborn" width="20" height="20" /> Seaborn |
+| Evaluation & Visualization | Scikit-learn metrics, Matplotlib, Seaborn |
 | Model Hosting | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face Hub" width="20" height="20" /> Hugging Face Hub |
 
 ---
 
 ## 📊 Dataset
 
+- **Dataset size:** 8,987 raw records, of which 8,986 are validated reviews after excluding one corrupted entry. The reviews were dual-annotated by two native-speaker annotators.
 - **8,987 Assamese movie reviews**, dual-annotated by 2 native-speaker annotators.
 - **Inter-annotator agreement:** 97.33% (Cohen's Kappa = 0.942).
 - Labels: binary sentiment (**Positive** / **Negative**).
-
-> **NOTE:** 8,987 raw records; 8,986 validated reviews
 
 ---
 
@@ -89,7 +103,12 @@ Assamese_Sentiment_Analysis/
 │   ├── Comparisons/
 │   ├── Confusion Matrix/
 │   └── Dataset Visualizations/
-└── Models/          # weights hosted on Hugging Face (see table above); folder gitignored locally
+├── Models/
+│   ├── CNN_BiLSTM/
+│   │   └── tokenizer.pkl
+│   └── SVM/
+│       ├── svm_model.joblib
+│       └── tfidf_vectorizer.joblib
 ```
 
 ---
@@ -102,7 +121,7 @@ Assamese_Sentiment_Analysis/
 | IndicBERT | 92.71% | 0.9220 | 0.9206 | 0.9234 | 0.9773 | 0.8439 |
 | CNN-BiLSTM | 93.05% | 0.9238 | 0.9341 | 0.9160 | 0.9787 | 0.8477 |
 | XLM-RoBERTa | 94.88% | 0.9452 | 0.9438 | 0.9466 | 0.9855 | 0.8904 |
-| **MuRIL** | **96.33%** | **0.9605** | 0.9608 | 0.9602 | 0.9882 | — |
+| **MuRIL** | **96.33%** | **0.9605** | **0.9608** | **0.9602** | **0.9882** | **0.9211** |
 
 **MuRIL is the best-performing model**, followed by XLM-R, CNN-BiLSTM, IndicBERT, and SVM as the traditional ML baseline. Interestingly, the custom CNN-BiLSTM baseline slightly *outperforms* IndicBERT despite having no pretrained language representations — likely due to IndicBERT's smaller capacity and generalized multilingual representation diluting Assamese-specific nuance.
 
@@ -185,11 +204,19 @@ tokenizer = AutoTokenizer.from_pretrained("AvinabhDutta-Dev/assamese-sentiment-m
 
 ## Licensing & Citation
 
-### Code License
-The source code in this repository is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+### Dataset License
 
-### Dataset, Models & Preprint License
-The dataset scripts, fine-tuned model weights, and the preprint text are licensed under a [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org). 
+The dataset is licensed under CC-BY-4.0.
+See the [Hugging Face dataset card](https://huggingface.co/datasets/AvinabhDutta-Dev/assamese-movie-reviews-sentiment)
+for its terms.
+
+### Model Licenses
+
+Refer to each model's Hugging Face card for its applicable license.
+
+### Preprint
+
+Please refer to the linked preprint's published terms for reuse and distribution. 
 
 This means you are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit by citing our preprint:
 
